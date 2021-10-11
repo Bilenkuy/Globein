@@ -106,6 +106,35 @@ header .menu a:hover {
   font-size: 50px;
 }
 
+#benefits {
+  margin-top: 50px;
+}
+
+.benefits__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.benefits__content {
+  margin-left: 30px;
+}
+.benefits__content h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.benefits__image {
+  padding: 10px 0 0 0;
+}
+.benefits__content p {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--paragraph-color);
+}
+
+
+
 .part {
   background-image: url(../img/part.jpg);
   background-size: cover;
