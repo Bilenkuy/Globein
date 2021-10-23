@@ -13,8 +13,6 @@
   --background: #F9F4F0;
 }
 
-
-
 header {
   background-image: url(../img/header.jpg);
   background-size: cover;
@@ -85,13 +83,13 @@ header .menu a:hover {
   border: ridge;
   cursor: pointer;
 }
-@media (min-width: 500px) {
 
+@media (min-width: 500px) {
   .burger-icon {
       display: none;
   }
+}
 
-  
   header nav .menu {
     display: flex;
     flex: 1; 
@@ -122,9 +120,11 @@ header .menu a:hover {
   margin: 10px 0px;
 }
 
-#benefits {
-
+h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
+
 h5 {
   color: #553F3F;
   text-align: center;
@@ -138,8 +138,8 @@ h5 {
   height: 120px;
   left: 140px;
   top: 802px;
-  
 }
+
 .benefits__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -167,23 +167,32 @@ display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
-
 position: absolute;
 width: 765px;
 height: 155.42px;
 }
 
-
 .part {
   background-image: url(../img/part.jpg);
   background-size: cover;
-  background-position: center;
-  min-height: 850px;
+  background-position: top;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 680px;
+  width: 1440px;
 }
+
+
+
+
+
+
+
+
+
 
 .part h2 {
   font-weight: normal;
@@ -196,6 +205,11 @@ height: 155.42px;
   text-align: center;
 }
 
+h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .part p {
   color:var(--main-color);
   font-family: TT Commons;
@@ -205,6 +219,12 @@ height: 155.42px;
   line-height: 24px;
   text-align: center;
 }
+
+p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .part button {
   display: flex;
   flex-direction: row;
@@ -223,6 +243,7 @@ height: 155.42px;
   flex-grow: 0;
   margin: 20px 0px;
 }
+
 .button:hover {
   border-color: slateblue;
   text-decoration: underline;
@@ -231,8 +252,8 @@ height: 155.42px;
 
 .container {
   background-color:  var(--main-color); 
-  
 }
+
 .container h3 {
   font-family: SangBleu Sunrise;
   font-style: normal;
@@ -241,6 +262,11 @@ height: 155.42px;
   line-height: 60px;
   color: #553F3F;
   text-align: center;
+}
+
+h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .container p {
@@ -266,7 +292,6 @@ main .services article p {
   
 }
 
-
 @media (min-width: 500px) {
   main .services {
     display: grid;
@@ -280,6 +305,7 @@ main .services article p {
     grid-template-columns: 1fr 1fr ;
   }
 }
+
 @media (min-width: 980px) {
   main .services {
     grid-template-columns: 1fr 1fr 1fr;
@@ -303,4 +329,8 @@ h4 {
   flex-grow: 0;
   margin: 0px 10px;
   
+}
+h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
