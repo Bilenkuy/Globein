@@ -82,13 +82,15 @@ header .menu a:hover {
   text-decoration: underline;
   border: ridge;
   cursor: pointer;
+  text-decoration-color: cornflowerblue;
+
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .burger-icon {
       display: none;
   }
-}
+
 
   header nav .menu {
     display: flex;
@@ -98,6 +100,7 @@ header .menu a:hover {
     padding-left: 15px;
     margin-left:20px;
   }
+}
   
   header .top-nav {
     display: flex;
@@ -123,6 +126,8 @@ header .menu a:hover {
 h1:hover {
   text-decoration: underline;
   cursor: pointer;
+  text-decoration-color: cornflowerblue;
+
 }
 
 h5 {
@@ -132,45 +137,60 @@ h5 {
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
-  line-height: 60px;
-  position: absolute;
-  width: 1160px;
-  height: 120px;
-  left: 140px;
-  top: 802px;
+  line-height: 200px;
+
+}
+.frame {
+
+}
+.awards {
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;    
+  max-width: 1042px;
+  align-items: center;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.benefits__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+.award {
+  display: block;
+  margin-top: 50px;
+  margin: 20px;
 }
-/*.benefits__content {
-  margin-left: 30px;
+
+.award-img{
+  width: 120px;
+  height: 65px;
+  padding-bottom: 10px;
 }
-.benefits__content h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 22px;
+
+.award-name {
+  padding-left: 20px;
+  width: 900px;
+  padding-bottom: 40px;
+  
 }
-.benefits__image {
-  padding: 10px 0 0 0;
+
+
+.award-description {
+  width: 900px;
+  padding-bottom: 40px;
 }
-.benefits__content p {
-  margin-top: 8px;
-  font-size: 16px;
-  line-height: 25px;
-  color: var(--paragraph-color);
-}*/
-frame {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-position: absolute;
-width: 765px;
-height: 155.42px;
+
+.award-example {
+  display: flex;
+  justify-content: left;
+  text-align: left;
 }
+
+
+
+
+
+
 
 .part {
   background-image: url(../img/part.jpg);
@@ -184,15 +204,6 @@ height: 155.42px;
   height: 680px;
   width: 1440px;
 }
-
-
-
-
-
-
-
-
-
 
 .part h2 {
   font-weight: normal;
@@ -208,6 +219,8 @@ height: 155.42px;
 h2:hover {
   text-decoration: underline;
   cursor: pointer;
+  text-decoration-color: cornflowerblue;
+
 }
 
 .part p {
@@ -223,6 +236,8 @@ h2:hover {
 p:hover {
   text-decoration: underline;
   cursor: pointer;
+  text-decoration-color: cornflowerblue;
+
 }
 
 .part button {
@@ -248,10 +263,17 @@ p:hover {
   border-color: slateblue;
   text-decoration: underline;
   border: ridge;
+  text-decoration-color: cornflowerblue;
+
 }
 
 .container {
   background-color:  var(--main-color); 
+  background-position: top;
+  max-width: 100%;
+  align-items: center;
+  height: 680px;
+  width: 1440px;
 }
 
 .container h3 {
@@ -267,11 +289,13 @@ p:hover {
 h3:hover {
   text-decoration: underline;
   cursor: pointer;
+  text-decoration-color: cornflowerblue;
+
 }
 
 .container p {
   position: static;
-  width: 300px;
+  width: 400px;
   height: 90px;
   left: 0px;
   top: 40px;
@@ -289,10 +313,9 @@ main .services article  {
 
 main .services article p {
   text-align: left;
-  
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   main .services {
     display: grid;
     grid-template-columns: 1fr ;
@@ -333,4 +356,6 @@ h4 {
 h4:hover {
   text-decoration: underline;
   cursor: pointer;
+  text-decoration-color: cornflowerblue;
+
 }
