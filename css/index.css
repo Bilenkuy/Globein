@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 :root {
-  font-family: 'Signika Negative', sans-serif;
+  font-family: 'TT Commons';
   margin: 0;
   padding: 0;
   --main-color:#FFFFFF;
@@ -13,23 +18,40 @@
   --background: #F9F4F0;
 }
 
-header {
-  background-image: url(../img/header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  max-width: 100%;
-  height: 400px;
-  width: 1440px;
+body {
+  position: relative;
+  font-family: 'TT Commons';
 }
-/*
+/* global title */
+.section-ttl {
+  position: relative;
+}
+
+header {
+  max-width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 header .logo img {
-  width: 250px;
+  width: 150px;
   height: auto;
 }
-*/
+.logo{
+  display: block;
+}
+
 .burger-icon {
   font-size: 3.5rem;
+  color: #fff;
+}
+
+.burger-icon.active {
+  transform: rotate(90deg);
+  
 }
 
 #burger-checkbox {
@@ -37,9 +59,8 @@ header .logo img {
 }
 
 header .menu {
-  padding: 50px;
   display: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 input:checked ~ .menu {
@@ -48,45 +69,37 @@ input:checked ~ .menu {
 
 
 header .menu a{
-color: var(--main-color) ;
-position: static;
-width: 120px;
-height: 28px;
-left: 0px;
-top: 0px;
-font-family: TT Commons;
-font-style: normal;
+color: var(--main-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 28px;
 letter-spacing: 1px;
 text-transform: uppercase;
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0px 40px;
+}
+
+@media (max-width: 1024px) {
+  .sign-in {
+    opacity: 0;
+  }
 }
 
 
-header .menu a{
+
+header .menu a, .sign-in a{
 display: block;
 text-decoration: none;
 color: var(--main-color);
 text-align: center;
-margin-left: 30px;
+transition: all .25s;
+margin: 0 20px;
 }
-
 
 header .menu a:hover {
-  color: slateblue;
-  text-decoration: underline;
-  border: ridge;
-  cursor: pointer;
-  text-decoration-color: cornflowerblue;
-
+  color: var(--hover-color);
 }
 
-@media (min-width: 600px) {
+
+@media (min-width: 1024px) {
   .burger-icon {
       display: none;
   }
@@ -94,25 +107,39 @@ header .menu a:hover {
 
   header nav .menu {
     display: flex;
-    flex: 1; 
-    align-items: baseline;   
-    justify-content: flex-end;
-    padding-left: 15px;
-    margin-left:20px;
+    align-items: center;
   }
 }
   
-  header .top-nav {
+.top-nav {
     display: flex;
     align-items: center;
     padding: 13px 100px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
- h1 {
+  @media  (max-width: 1024px) {
+    .top-nav {
+      padding: 13px 30px;
+    }
+  
+  }
+
+  .top-banner {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 680px;
+  }
+
+ .page-ttl {
   color: #FFFFFF;
   text-align: center;
-  font-family: SangBleu Sunrise;
+  font-family: 'TT Commons';
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
@@ -123,17 +150,10 @@ header .menu a:hover {
   margin: 10px 0px;
 }
 
-h1:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  text-decoration-color: cornflowerblue;
-
-}
-
 h5 {
   color: #553F3F;
   text-align: center;
-  font-family: SangBleu Sunrise;
+  font-family: 'TT Commons';
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -194,7 +214,25 @@ h5 {
   text-align: left;
 }
 
+@media (min-width: 1024px) {
+  .award-example {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 5px;
+  }
+}
 
+@media (min-width: 900px) {
+  .award-example {
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+@media (min-width: 980px) {
+  .award-example {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 
 
@@ -216,7 +254,7 @@ h5 {
 .part h2 {
   font-weight: normal;
   color: var(--main-color);
-  font-family: SangBleu Sunrise;
+  font-family: 'TT Commons';
   font-style: normal;
   font-weight: bold;
   font-size: 64px;
@@ -224,28 +262,14 @@ h5 {
   text-align: center;
 }
 
-h2:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  text-decoration-color: cornflowerblue;
-
-}
-
 .part p {
   color:var(--main-color);
-  font-family: TT Commons;
+  font-family: 'TT Commons';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
-}
-
-p:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  text-decoration-color: cornflowerblue;
-
 }
 
 .part button {
@@ -285,7 +309,7 @@ p:hover {
 }
 
 .container h3 {
-  font-family: SangBleu Sunrise;
+  font-family: 'TT Commons';
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -294,20 +318,13 @@ p:hover {
   text-align: center;
 }
 
-h3:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  text-decoration-color: cornflowerblue;
-
-}
-
 .container p {
   position: static;
   width: 400px;
   height: 90px;
   left: 0px;
   top: 40px;
-  font-family: TT Commons;
+  font-family: 'TT Commons';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -350,7 +367,7 @@ h4 {
   height: 30px;
   left: 0px;
   top: 0px;
-  font-family: TT Commons;
+  font-family: 'TT Commons';
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
@@ -359,11 +376,4 @@ h4 {
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
-  
-}
-h4:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  text-decoration-color: cornflowerblue;
-
 }
