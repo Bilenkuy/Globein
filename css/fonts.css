@@ -43,3 +43,12 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'SangBleu Sunrise';
+    src: url('../SangBleuSunrise-Regular.woff2') format('woff2'),
+        url('../SangBleuSunrise-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
