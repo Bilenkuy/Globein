@@ -31,8 +31,7 @@ body {
 header {
   max-width: 100%;
   height: 80px;
-  top: 0;  position: absolute;
-  left: 0;
+  position: absolute;
   width: 100%;
 }
 
@@ -82,8 +81,6 @@ text-transform: uppercase;
     opacity: 0;
   }
 }
-
-
 
 header .menu a, .sign-in a{
 display: block;
@@ -140,7 +137,6 @@ header .menu, .sign-in a:hover {
   color: #FFFFFF;
   text-align: center;
   font-family: 'TT Commons';
-  font-style: normal;
   font-weight: bold;
   font-size: 45px;
   line-height: 65px;
@@ -153,8 +149,6 @@ header .menu, .sign-in a:hover {
 .general-subtitle {
   color: #553F3F;
   font-family: 'SangBleu Sunrise';
-  height: 120px;
-  top: 802px;
   font-weight: bold;
   font-size: 40px;
   line-height: 60px;
@@ -166,6 +160,10 @@ header .menu, .sign-in a:hover {
   padding: 30px 0;
 }
 
+.container {
+  padding: 0 30px;
+}
+
 .award {
   display: flex;
   flex-wrap: wrap;
@@ -175,25 +173,16 @@ header .menu, .sign-in a:hover {
 
 .award-example {
   display: flex;
-  justify-content: left;
-  text-align: left;
 }
 
 .award-img {
   width: 96.18px;
   height: 81.31px;
-  left: 139.88px;
-  top: 1021px;
   margin: 0 10px;
 }
 
 .award-name {
-  width: 360px;
-  height: 81px;
-  left: 269.88px;
-  top: 1021px;
   font-family: 'TT Commons';
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 27px;
@@ -204,18 +193,10 @@ header .menu, .sign-in a:hover {
 }
 
 .award-description {
-  width: 562px;
-  height: 96px;
-  left: 740px;
-  top: 1021px;
-  font-family: TT Commons;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'TT Commons';
   font-size: 18px;
   line-height: 24px;
   color: #978C8C;
-  justify-content: left;
-  text-align: left;
 }
 
 @media (min-width: 550px) {
@@ -235,30 +216,29 @@ header .menu, .sign-in a:hover {
 
 
 .frame {
- padding: 80px 0;
+ max-width: 100%;
+ padding: 80px;
 }
 
 
 .frame-img {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 100%;
-  
+  margin-bottom: 20px;
+
 }
 
 @media (min-width: 550px) {
   .frame-img {
-    padding: 30px 0;
-    max-width: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 960px) {
   .frame-img {
-    width: 1160px;
-    margin: 0 auto;
-    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -406,53 +386,46 @@ header .menu, .sign-in a:hover {
     max-width: 30%;
   }
 }
+.mission {
+padding: 80px 0;
+}
+
+.container {
+  padding: 0 30px;
+}
 
 .missions-img {
-width: 500px;
-height: 320px;
-left: 82.07px;
-top: 2970px;
-margin: 0 20px;
+  width: 500px;
+  height: 320px;
+  margin: 0 10px;
 }
 
-.mission-img ,  mission-name  {
-}
-
-.mission-img {
-  width: 60px;
-  height: 60px;
-  top: 1021px;
+.mission-example {
   margin: 0 30px;
+
 }
+.mission-img {  
+  display: flex;
+  margin: 0 20px;
+
+}
+
 
 .mission-name {
-  width: 520px;
-  height: 60px;
-  left: 760.07px;
-  top: 2975px;
-  font-family:  'SangBleu Sunrise';
-  font-style: normal;
+  font-family: 'SangBleu Sunrise';
   font-weight: bold;
   font-size: 40px;
   line-height: 60px;
   align-items: center;
   color: #553F3F;
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 .mission-description {
-  width: 599.11px;
-  height: 190.17px;
-  left: 630.95px;
-  top: 3067.16px;
   font-family: 'TT Commons';
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: -0.01em;
   color: #553F3F;
- margin: 0 40px;
 }
 
 
@@ -465,8 +438,6 @@ margin: 0 20px;
   padding: 25px 58px;
   width: 191px;
   height: 49.52px;
-  left: 638.07px;
-  top: 3289.03px;
   background: #FF7A74;
   border-radius: 4px;
   color: white;
@@ -481,7 +452,7 @@ margin: 0 20px;
 }
 
 @media (min-width: 550px) {
- .mission-conteiner {
+ .conteiner {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 2px;
@@ -489,15 +460,13 @@ margin: 0 20px;
 }
 
 @media (min-width:  960px) {
- .mission-conteiner {
+ .conteiner {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 .find {
-  height: 49px;
-  top: 3219px;
   font-family: 'SangBleu Sunrise';
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 60px;
