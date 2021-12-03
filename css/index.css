@@ -173,12 +173,13 @@ header .menu, .sign-in a:hover {
 
 .award-example {
   display: flex;
+  justify-content: space-between;
 }
 
 .award-img {
   width: 96.18px;
   height: 81.31px;
-  margin: 0 10px;
+  margin: 30px;
 }
 
 .award-name {
@@ -189,7 +190,7 @@ header .menu, .sign-in a:hover {
   display: flex;
   align-items: center;
   color: #553F3F;
-  margin: 0 50px;
+  margin: 30px;
 }
 
 .award-description {
@@ -197,6 +198,9 @@ header .menu, .sign-in a:hover {
   font-size: 18px;
   line-height: 24px;
   color: #978C8C;
+  margin: 30px;
+
+  
 }
 
 @media (min-width: 550px) {
@@ -217,7 +221,7 @@ header .menu, .sign-in a:hover {
 
 .frame {
  max-width: 100%;
- padding: 80px;
+ padding: 50px;
 }
 
 
@@ -271,13 +275,13 @@ header .menu, .sign-in a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-    width: 214px;
-    height: 50px;
-    background: #FF7A74;
-    border-radius: 4px;
-    margin: 20px 0px;
-    color: white;
-    transition: all, .25;
+  width: 214px;
+  height: 50px;
+  background: #FF7A74;
+  border-radius: 4px;
+  margin: 20px 0px;
+  color: white;
+  transition: all, .25;
 }
 
 .button:hover {
@@ -334,9 +338,9 @@ header .menu, .sign-in a:hover {
 
 @media (min-width: 960px) {
   .container {
-    width: 1160px;
-    margin: 0 auto;
-    max-width: 100%;
+  width: 1160px;
+  margin: 0 auto;
+  max-width: 100%;
   }
 }
 
@@ -364,8 +368,8 @@ header .menu, .sign-in a:hover {
 
   @media (min-width: 960px) {
   .services h3 {
-    font-size: 40px;
-    line-height: 60px;
+  font-size: 40px;
+  line-height: 60px;
   }
 }
 
@@ -387,11 +391,12 @@ header .menu, .sign-in a:hover {
   }
 }
 .mission {
-padding: 80px 0;
+  padding: 80px 0;
 }
 
 .container {
   padding: 0 30px;
+  
 }
 
 .missions-img {
@@ -400,14 +405,10 @@ padding: 80px 0;
   margin: 0 10px;
 }
 
-.mission-example {
-  margin: 0 30px;
-
-}
 .mission-img {  
   display: flex;
-  margin: 0 20px;
-
+  align-items: center;
+  margin: 15px;
 }
 
 
@@ -418,7 +419,7 @@ padding: 80px 0;
   line-height: 60px;
   align-items: center;
   color: #553F3F;
-  margin: 0 20px;
+  margin: 15px;
 }
 
 .mission-description {
@@ -453,15 +454,15 @@ padding: 80px 0;
 
 @media (min-width: 550px) {
  .conteiner {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2px;
   }
 }
 
 @media (min-width:  960px) {
  .conteiner {
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   }
 }
 
