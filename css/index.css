@@ -11,7 +11,7 @@ body, html {
 }
 
 :root {
-  font-family: 'TT Commons';
+  font-family: 'SangBleu Sunrise', 'TT Commons';
   margin: 0;
   padding: 0;
   --main-color:#FFFFFF;
@@ -21,7 +21,7 @@ body, html {
 
 body {
   position: relative;
-  font-family: 'TT Commons';
+  font-family: 'SangBleu Sunrise','TT Commons';
 }
 /* global title */
 .section-ttl {
@@ -199,29 +199,27 @@ header .menu, .sign-in a:hover {
   line-height: 24px;
   color: #978C8C;
   margin: 30px;
-
-  
 }
 
 @media (min-width: 550px) {
- .award {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2px;
+ .award-example {
+   flex-direction: column;
+   align-items: center;
   }
 }
 
 @media (min-width:  960px) {
- .award {
-    grid-template-columns: 1fr 1fr;
-  }
+ .award-example {
+flex-direction: inherit;
+}
 }
 
 
 
 .frame {
- max-width: 100%;
- padding: 50px;
+  max-width: 100%;
+  padding: 50px;
+  width: 100%;
 }
 
 
@@ -230,19 +228,20 @@ header .menu, .sign-in a:hover {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  flex-direction: row;
 
 }
 
 @media (min-width: 550px) {
   .frame-img {
-    display: grid;
-    grid-template-columns: 1fr;
+   flex-direction: column;
   }
 }
 
 @media (min-width: 960px) {
   .frame-img {
-    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: inherit;
+
   }
 }
 
