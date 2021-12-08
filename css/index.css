@@ -443,20 +443,6 @@ header .menu, .sign-in a:hover {
     text-decoration-color: cornflowerblue;
 }
 
-@media (min-width: 550px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 2px;
-    }
-}
-
-@media (min-width: 960px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 .find {
     font-family: 'SangBleu Sunrise', sans-serif;
     font-weight: bold;
