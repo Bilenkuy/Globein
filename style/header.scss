@@ -1,3 +1,10 @@
 header {
   display: flex;
 }
+
+$color-ttl: '#000';
+$font-size: '24px';
+
+body {
+  color: $color-ttl;
+}
