@@ -1,0 +1,9 @@
+header {
+  display: flex;
+}
+header * {
+  color: #000;
+  background: red;
+}
+
+/*# sourceMappingURL=style.css.map */
