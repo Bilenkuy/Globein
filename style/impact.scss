@@ -1,5 +1,5 @@
 .impact {
-  background-image: url("../img/impact.jpg");
+  background-image: url('../img/impact.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32,11 +32,11 @@
   border-radius: 4px;
   margin: 20px 0;
   color: white;
-  transition: all, 0.25s;
+  transition: all, .25s;
 }
 
 .impact-ttl {
-  font-family: "SangBleu Sunrise", sans-serif;
+  font-family: 'SangBleu Sunrise', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 42px;
@@ -50,19 +50,19 @@
     line-height: 75px;
   }
 }
+
 @media (min-width: 960px) {
   .impact-ttl {
     font-size: 64px;
     line-height: 84px;
   }
 }
+
 .impact-content {
   color: var(--main-color);
-  font-family: "TT Commons", sans-serif;
+  font-family: 'TT Commons', sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
   margin-bottom: 30px;
 }
-
-/*# sourceMappingURL=style.css.map */
