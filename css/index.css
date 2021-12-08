@@ -158,59 +158,7 @@ header .menu, .sign-in a:hover {
     margin: 0 auto;
 }
 
-.awards {
-    padding: 30px 0;
-}
 
-.award {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding: 80px 0;
-}
-
-.award-example {
-    display: flex;
-    justify-content: space-between;
-}
-
-.award-img {
-    width: 96px;
-    height: 81px;
-    margin: 30px;
-}
-
-.award-name {
-    font-family: 'TT Commons', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    display: flex;
-    align-items: center;
-    color: #553F3F;
-    margin: 30px;
-}
-
-.award-description {
-    font-family: 'TT Commons', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    color: #978C8C;
-    margin: 30px;
-}
-
-@media (min-width: 550px) {
-    .award-example {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (min-width: 960px) {
-    .award-example {
-        flex-direction: inherit;
-    }
-}
 
 
 .frame {
@@ -317,15 +265,13 @@ header .menu, .sign-in a:hover {
 }
 
 .missions-img {
-    width: 500px;
-    height: 320px;
-    margin: 0 10px;
+    max-width: 100%;
+
 }
 
 .mission-img {
     display: flex;
     align-items: center;
-    margin: 15px;
 }
 
 
@@ -336,7 +282,6 @@ header .menu, .sign-in a:hover {
     line-height: 60px;
     align-items: center;
     color: #553F3F;
-    margin: 15px;
 }
 
 .mission-description {

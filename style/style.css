@@ -65,4 +65,57 @@
   margin-bottom: 30px;
 }
 
+.awards {
+  padding: 30px 0;
+}
+
+.award {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.award-example {
+  display: flex;
+  justify-content: space-between;
+}
+
+.award-img {
+  width: 96px;
+  height: 81px;
+  margin: 30px;
+}
+
+.award-name {
+  font-family: "TT Commons", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #553F3F;
+  margin: 30px;
+}
+
+.award-description {
+  font-family: "TT Commons", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #978C8C;
+  margin: 30px;
+}
+
+@media (min-width: 380px) {
+  .award-example {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 960px) {
+  .award-example {
+    flex-direction: inherit;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
