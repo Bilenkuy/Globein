@@ -1,0 +1,54 @@
+
+.mission {
+  padding: 80px 0;
+}
+
+.mission-example {
+  display: flex;
+}
+.missions-img {
+  max-width: 100%;
+  width: 100%;
+
+
+}
+
+.mission-img {
+  display: flex;
+}
+
+
+.mission-name {
+  font-family: 'SangBleu Sunrise', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  align-items: center;
+  color: #553F3F;
+}
+
+.mission-description {
+  font-family: 'TT Commons', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #553F3F;
+}
+
+
+.mission-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 58px;
+  width: 191px;
+  height: 49px;
+  background: #FF7A74;
+  border-radius: 4px;
+  color: white;
+  margin: 28px 0;
+}
+
+.mission-button:hover {
+  text-decoration-color: cornflowerblue;
+}
