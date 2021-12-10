@@ -6,17 +6,17 @@
 .mission-example {
   display: flex;
 }
+
 .missions-img {
-  max-width: 100%;
-  width: 100%;
-
-
+width: 450px;
+height: 400px;
 }
 
 .mission-img {
   display: flex;
+  margin: 20px
+;
 }
-
 
 .mission-name {
   font-family: 'SangBleu Sunrise', sans-serif;
@@ -25,6 +25,7 @@
   line-height: 60px;
   align-items: center;
   color: #553F3F;
+  margin-left: 20px;
 }
 
 .mission-description {
@@ -51,4 +52,16 @@
 
 .mission-button:hover {
   text-decoration-color: cornflowerblue;
+}
+
+@media (min-width: 340px) {
+  .mission-example {
+  flex-direction: column;
+  }
+}
+
+@media (min-width: 960px) {
+  .mission-example {
+    flex-direction: inherit;
+  }
 }
