@@ -106,7 +106,7 @@
   margin: 30px;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 550px) {
   .award-example {
     flex-direction: column;
     align-items: center;
@@ -114,7 +114,7 @@
 }
 @media (min-width: 960px) {
   .award-example {
-    flex-direction: inherit;
+    flex-direction: row;
   }
 }
 .services {
@@ -189,6 +189,7 @@
 .missions-img {
   width: 450px;
   height: 400px;
+  float: left;
 }
 
 .mission-img {
@@ -231,14 +232,14 @@
   text-decoration-color: cornflowerblue;
 }
 
-@media (min-width: 340px) {
+@media (min-width: 550px) {
   .mission-example {
-    flex-direction: column;
+    flex-direction: inherit;
   }
 }
 @media (min-width: 960px) {
   .mission-example {
-    flex-direction: inherit;
+    flex-direction: column;
   }
 }
 

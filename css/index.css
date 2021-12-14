@@ -172,7 +172,6 @@ header .menu, .sign-in a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
     flex-direction: row;
 
 }
@@ -185,8 +184,8 @@ header .menu, .sign-in a:hover {
 
 @media (min-width: 960px) {
     .frame-img {
-        flex-direction: column;
-        margin: 20px;
+        flex-direction: row;
+
     }
 }
 
