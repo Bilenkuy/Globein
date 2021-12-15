@@ -160,32 +160,28 @@ header .menu, .sign-in a:hover {
 
 
 
-
 .frame {
     max-width: 100%;
-    padding: 50px;
-    width: 100%;
-}
-
-
-.frame-img {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-
 }
 
-@media (min-width: 550px) {
-    .frame-img {
+
+
+@media (min-width: 340px) {
+    .frame {
+
         flex-direction: column;
+        line-height: 80px;
     }
 }
 
 @media (min-width: 960px) {
-    .frame-img {
-        display: flex;
+    .frame {
 
+  flex-direction: inherit;
+        line-height: 80px;
     }
 }
 
