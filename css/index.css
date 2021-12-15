@@ -184,7 +184,7 @@ header .menu, .sign-in a:hover {
 
 @media (min-width: 960px) {
     .frame-img {
-        flex-direction: row;
+        display: flex;
 
     }
 }

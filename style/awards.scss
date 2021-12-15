@@ -39,7 +39,7 @@
   margin: 30px;
 }
 
-@media (min-width: 380px) {
+@media (min-width: 550px) {
   .award-example {
     flex-direction: column;
     align-items: center;
@@ -48,6 +48,6 @@
 
 @media (min-width: 960px) {
   .award-example {
-    flex-direction: inherit;
+    flex-direction: row;
   }
 }
