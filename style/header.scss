@@ -1,0 +1,46 @@
+header .menu a, .sign-in a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+  text-align: center;
+  transition: all 0.25s;
+  margin: 0 20px;
+}
+
+header .menu, .sign-in a:hover {
+  color: var(--hover-color);
+}
+
+@media (min-width: 960px) {
+  .burger-icon {
+    display: none;
+  }
+
+  header nav .menu {
+    display: flex;
+    align-items: center;
+  }
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+  padding: 13px 100px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .top-nav {
+    padding: 13px 30px;
+  }
+}
+.top-banner {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 680px;
+}
+

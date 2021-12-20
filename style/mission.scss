@@ -61,7 +61,7 @@ height: 320px;
 .mission-button:hover {
   text-decoration-color: cornflowerblue;
 }
-/*
+
 @media  (min-width: 550px) {
   .mission-example {
   flex-direction: column;
@@ -70,6 +70,6 @@ height: 320px;
 
 @media (min-width: 960px) {
   .mission-example {
-    flex-direction: column;
+    flex-direction:inherit;
   }
-}*/
+}

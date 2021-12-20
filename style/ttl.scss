@@ -1,0 +1,52 @@
+
+/* global title */
+.section-ttl {
+  position: relative;
+  font-family: 'SangBleu Sunrise', sans-serif;
+}
+
+.page-ttl {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'TT Commons', sans-serif;
+  font-size: 57px;
+  line-height: 65px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 10px 0;
+}
+
+.general-subtitle {
+  color: #553F3F;
+  font-family: 'SangBleu Sunrise', sans-serif;
+  font-size: 40px;
+  line-height: 62px;
+  text-align: center;
+  margin: 0 auto;
+  pading: 92px;
+}
+
+
+.impact-ttl {
+  font-family: 'SangBleu Sunrise', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media (min-width: 550px) {
+  .impact-ttl {
+    font-size: 60px;
+    line-height: 75px;
+  }
+}
+
+@media (min-width: 960px) {
+  .impact-ttl {
+    font-size: 64px;
+    line-height: 84px;
+  }
+}

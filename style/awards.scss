@@ -12,7 +12,7 @@
 }
 
 .award-example {
-  flex-direction: inherit;
+ display: flex;
 
 
 
@@ -52,6 +52,42 @@
 
 @media (min-width: 960px) {
   .award-example {
-    flex-direction: column;
+    flex-direction: inherit;
   }
+}
+.frame {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+@media (min-width: 340px) {
+  .frame {
+
+    flex-direction: column;
+    line-height: 80px;
+  }
+}
+
+@media (min-width: 960px) {
+  .frame {
+
+    flex-direction: inherit;
+    line-height: 80px;
+  }
+}
+
+
+
+.find {
+  font-family: 'SangBleu Sunrise', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #553F3F;
+  margin: 114px auto;
 }

@@ -35,28 +35,6 @@
   transition: all, .25s;
 }
 
-.impact-ttl {
-  font-family: 'SangBleu Sunrise', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 42px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-@media (min-width: 550px) {
-  .impact-ttl {
-    font-size: 60px;
-    line-height: 75px;
-  }
-}
-
-@media (min-width: 960px) {
-  .impact-ttl {
-    font-size: 64px;
-    line-height: 84px;
-  }
-}
 
 .impact-content {
   color: var(--main-color);
