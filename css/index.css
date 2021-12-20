@@ -139,8 +139,7 @@ header .menu, .sign-in a:hover {
     color: #FFFFFF;
     text-align: center;
     font-family: 'TT Commons', sans-serif;
-    font-weight: bold;
-    font-size: 45px;
+    font-size: 57px;
     line-height: 65px;
     flex: none;
     order: 0;
@@ -151,11 +150,11 @@ header .menu, .sign-in a:hover {
 .general-subtitle {
     color: #553F3F;
     font-family: 'SangBleu Sunrise', sans-serif;
-    font-weight: bold;
     font-size: 40px;
-    line-height: 60px;
+    line-height: 62px;
     text-align: center;
     margin: 0 auto;
+    pading: 92px;
 }
 
 

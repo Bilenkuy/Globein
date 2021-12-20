@@ -10,12 +10,14 @@
   padding: 80px 0;
   justify-content: space-around;
 }
-/*
+
 .award-example {
-  display: flex;
-  justify-content: space-between;
+  flex-direction: inherit;
+
+
+
+
 }
-*/
 .award-img {
   width: 96px;
   height: 81px;
@@ -41,15 +43,15 @@
   margin: 30px;
 }
 
-@media (min-width: 340px) {
-  .award {
+@media (min-width: 550px) {
+  .award-example {
     flex-direction: column;
-;
+
   }
 }
 
 @media (min-width: 960px) {
-  .award {
-    flex-direction: inherit;
+  .award-example {
+    flex-direction: column;
   }
 }
