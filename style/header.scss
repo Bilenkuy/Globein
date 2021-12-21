@@ -1,3 +1,44 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all, .25s;
+
+  svg {
+    path {
+      transition: all, .25s;
+    }
+  }
+
+  &.scrolled {
+    background: #fff;
+
+    .burger-icon {
+      color: #af443f;
+    }
+
+    svg {
+      path {
+        fill: #af443f
+      }
+    }
+  }
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  padding: 13px 100px;
+  justify-content: space-between;
+}
+
+.empty-box {
+  @media (min-width: $md-size) {
+    display: none;
+  }
+}
+
 header .menu a, .sign-in a {
   display: block;
   text-decoration: none;
@@ -7,8 +48,19 @@ header .menu a, .sign-in a {
   margin: 0 20px;
 }
 
+header {
+  .menu, .sign-in {
+    display: none;
+  }
+}
+
 header .menu, .sign-in a:hover {
   color: var(--hover-color);
+
+}
+
+.burger-icon {
+  color: #FFFFFF;
 }
 
 @media (min-width: 960px) {
@@ -16,31 +68,17 @@ header .menu, .sign-in a:hover {
     display: none;
   }
 
-  header nav .menu {
+  header .top-nav .menu {
     display: flex;
     align-items: center;
+
   }
 }
-.top-nav {
-  display: flex;
-  align-items: center;
-  padding: 13px 100px;
-  justify-content: space-between;
-}
 
-@media (max-width: 1024px) {
+
+@media (min-width: 1024px) {
   .top-nav {
     padding: 13px 30px;
   }
-}
-.top-banner {
-  background-image: url("../img/header.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 680px;
 }
 

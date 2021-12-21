@@ -1,3 +1,36 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all, 0.25s;
+}
+header svg path {
+  transition: all, 0.25s;
+}
+header.scrolled {
+  background: #fff;
+}
+header.scrolled .burger-icon {
+  color: #af443f;
+}
+header.scrolled svg path {
+  fill: #af443f;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  padding: 13px 100px;
+  justify-content: space-between;
+}
+
+@media (min-width: 960px) {
+  .empty-box {
+    display: none;
+  }
+}
+
 header .menu a, .sign-in a {
   display: block;
   text-decoration: none;
@@ -7,8 +40,16 @@ header .menu a, .sign-in a {
   margin: 0 20px;
 }
 
+header .menu, header .sign-in {
+  display: none;
+}
+
 header .menu, .sign-in a:hover {
   color: var(--hover-color);
+}
+
+.burger-icon {
+  color: #FFFFFF;
 }
 
 @media (min-width: 960px) {
@@ -16,19 +57,12 @@ header .menu, .sign-in a:hover {
     display: none;
   }
 
-  header nav .menu {
+  header .top-nav .menu {
     display: flex;
     align-items: center;
   }
 }
-.top-nav {
-  display: flex;
-  align-items: center;
-  padding: 13px 100px;
-  justify-content: space-between;
-}
-
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .top-nav {
     padding: 13px 30px;
   }
@@ -55,6 +89,9 @@ header .menu, .sign-in a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.impact h2 {
+  color: #FFFFFF;
 }
 
 .impact-info {
@@ -101,10 +138,6 @@ header .menu, .sign-in a:hover {
   margin: 0 auto;
   padding: 80px 0;
   justify-content: space-around;
-}
-
-.award-example {
-  display: flex;
 }
 
 .award-img {
@@ -299,23 +332,6 @@ header .menu, .sign-in a:hover {
   }
 }
 /* global title */
-.section-ttl {
-  position: relative;
-  font-family: "SangBleu Sunrise", sans-serif;
-}
-
-.page-ttl {
-  color: #FFFFFF;
-  text-align: center;
-  font-family: "TT Commons", sans-serif;
-  font-size: 57px;
-  line-height: 65px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 10px 0;
-}
-
 .general-subtitle {
   color: #553F3F;
   font-family: "SangBleu Sunrise", sans-serif;
@@ -323,29 +339,7 @@ header .menu, .sign-in a:hover {
   line-height: 62px;
   text-align: center;
   margin: 0 auto;
-  pading: 92px;
-}
-
-.impact-ttl {
-  font-family: "SangBleu Sunrise", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 42px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
-@media (min-width: 550px) {
-  .impact-ttl {
-    font-size: 60px;
-    line-height: 75px;
-  }
-}
-@media (min-width: 960px) {
-  .impact-ttl {
-    font-size: 64px;
-    line-height: 84px;
-  }
+  padding: 92px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-  <nav class="top-nav">
+  <div class="top-nav">
     <div class="burger-icon">☰</div>
     <a class="logo" href="index.html">
       <svg width="146" height="50" viewBox="0 0 146 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,28 +20,29 @@
               fill="white"/>
       </svg>
     </a>
-    <div class="menu">
-      <a href="#awards">AWARDS</a>
-      <a href="#part">PART</a>
-      <a href="#mission">MISSION</a>
-      <a href="#impact">IMPACT</a>
-    </div>
+    <div class="empty-box"></div>
+    <nav class="menu main-menu">
+      <a class="main-menu__link active" href="#awards">AWARDS</a>
+      <a class="main-menu__link" href="#part">PART</a>
+      <a class="main-menu__link" href="#mission">MISSION</a>
+      <a class="main-menu__link" href="#impact">IMPACT</a>
+    </nav>
     </div>
     <div class="sign-in"><a href="#sign">SIGN IN</a></div>
-  </nav>
+  </div>
 </header>
 
 <!-- ===top banner=== -->
 <section class="top-banner">
-  <div class="page-ttl">Careers at GlobeIn</div>
+  <h1>Careers at GlobeIn</h1>
 </section>
 
 <!-- ===Awards=== -->
 <section id="awards" class="awards">
   <div class="container">
-    <div class="general-subtitle">Care a lot about something<br>
+    <h3>Care a lot about something<br>
       bigger than yourself?
-    </div>
+    </h3>
     <div class="award">
       <div class="award-example">
         <img class="award-img" src="img/group.jpg" alt="Award">
@@ -159,7 +160,7 @@
 <!-- ===Services=== -->
 <section class="services">
   <div class="container">
-    <h3>Our team</h3>
+    <h3 class="ttl">Our team</h3>
     <div class="service-items">
       <div class='service-item'>
         <h4>Product & Tech</h4>
@@ -281,6 +282,6 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
-<script src='js/init.js'></script>
+<script src='js/init.js' defer></script>
 </body>
 </html>
