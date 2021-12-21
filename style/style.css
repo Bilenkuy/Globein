@@ -57,12 +57,12 @@ header .menu, .sign-in a:hover {
     display: none;
   }
 
-  header .top-nav .menu {
+  header nav .menu {
     display: flex;
     align-items: center;
   }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .top-nav {
     padding: 13px 30px;
   }
