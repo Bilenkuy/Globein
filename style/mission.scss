@@ -1,29 +1,22 @@
-
 .mission {
   padding: 80px 0;
-
 }
-
 
 .mission-example {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 80px 0;
-
 }
 
 .missions-img {
-height: 320px;
+  height: 320px;
   width: 500px;
-
-
 }
 
 .mission-img {
   display: flex;
-  margin: 20px
-;
+  margin: 20px;
 }
 
 .mission-name {
@@ -43,7 +36,6 @@ height: 320px;
   color: #553F3F;
 }
 
-
 .mission-button {
   display: flex;
   flex-direction: row;
@@ -62,13 +54,13 @@ height: 320px;
   text-decoration-color: cornflowerblue;
 }
 
-@media  (min-width: 550px) {
+@media  (min-width: $sm-size) {
   .mission-example {
   flex-direction: column;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: $md-size) {
   .mission-example {
     flex-direction:inherit;
   }

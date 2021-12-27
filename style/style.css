@@ -62,7 +62,7 @@ header .menu, .sign-in a:hover {
     align-items: center;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 960px) {
   .top-nav {
     padding: 13px 30px;
   }
@@ -101,6 +101,15 @@ header .menu, .sign-in a:hover {
   flex-direction: column;
 }
 
+.impact-content {
+  color: var(--main-color);
+  font-family: "TT Commons", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .impact-info .button {
   margin: 0 auto;
 }
@@ -118,20 +127,11 @@ header .menu, .sign-in a:hover {
   transition: all, 0.25s;
 }
 
-.impact-content {
-  color: var(--main-color);
-  font-family: "TT Commons", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .awards {
   padding: 30px 0;
 }
 
-.award {
+.award-example {
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -139,8 +139,7 @@ header .menu, .sign-in a:hover {
   padding: 80px 0;
   justify-content: space-around;
 }
-
-.award-img {
+.award-example img {
   width: 96px;
   height: 81px;
   margin: 30px;
@@ -172,7 +171,7 @@ header .menu, .sign-in a:hover {
 }
 @media (min-width: 960px) {
   .award-example {
-    flex-direction: inherit;
+    display: flex;
   }
 }
 .frame {
@@ -182,7 +181,7 @@ header .menu, .sign-in a:hover {
   align-items: center;
 }
 
-@media (min-width: 340px) {
+@media (min-width: 550px) {
   .frame {
     flex-direction: column;
     line-height: 80px;
@@ -194,36 +193,10 @@ header .menu, .sign-in a:hover {
     line-height: 80px;
   }
 }
-.find {
-  font-family: "SangBleu Sunrise", sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 60px;
-  text-align: center;
-  color: #553F3F;
-  margin: 114px auto;
-}
-
 .services {
   padding: 20px 0;
 }
 
-.container {
-  padding: 0 20px;
-}
-
-@media (min-width: 550px) {
-  .container {
-    padding: 0 30px;
-  }
-}
-@media (min-width: 960px) {
-  .container {
-    width: 1160px;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-}
 .service-items {
   display: flex;
   justify-content: space-between;
@@ -233,24 +206,8 @@ header .menu, .sign-in a:hover {
 
 .services h3 {
   margin-bottom: 33px;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 30px;
-  text-align: center;
 }
 
-@media (min-width: 550px) {
-  .services h3 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-@media (min-width: 960px) {
-  .services h3 {
-    font-size: 40px;
-    line-height: 60px;
-  }
-}
 .service-item {
   margin-bottom: 20px;
 }
@@ -340,6 +297,23 @@ header .menu, .sign-in a:hover {
   text-align: center;
   margin: 0 auto;
   padding: 92px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: 550px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 1160px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@ header {
   }
 
   &.scrolled {
-    background: #fff;
+    background: $main-color;
 
     .burger-icon {
       color: #af443f;
@@ -65,7 +65,7 @@ header .menu, .sign-in a:hover {
   color: #FFFFFF;
 }
 
-@media (min-width: 960px) {
+@media (min-width: $md-size) {
   .burger-icon {
     display: none;
   }
@@ -78,7 +78,7 @@ header .menu, .sign-in a:hover {
 }
 
 
-@media (max-width: 1024px) {
+@media (min-width: $md-size) {
   .top-nav {
     padding: 13px 30px;
   }
