@@ -1,0 +1,435 @@
+@font-face {
+  font-family: "TT Commons";
+  src: url("../src/fonts/TTCommons-Light.woff2") format("woff2"), url("../src/fonts/TTCommons-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("../src/fonts/TTCommons-Bold.woff2") format("woff2"), url("../src/fonts/TTCommons-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("../src/fonts/TTCommons-DemiBold.woff2") format("woff2"), url("../src/fonts/TTCommons-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("../src/fonts/TTCommons-Regular.woff2") format("woff2"), url("../src/fonts/TTCommons-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Commons";
+  src: url("../src/fonts/TTCommons-Medium.woff2") format("woff2"), url("../src/fonts/TTCommons-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SangBleu Sunrise";
+  src: url("../src/fonts/SangBleuSunrise-Regular.woff2") format("woff2"), url("../src/fonts/SangBleuSunrise-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all, 0.25s;
+}
+header svg path {
+  transition: all, 0.25s;
+}
+header.scrolled {
+  background: #fff;
+}
+header.scrolled .burger-icon {
+  color: #af443f;
+}
+header.scrolled svg path {
+  fill: #af443f;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  padding: 13px 100px;
+  justify-content: space-between;
+}
+
+@media (min-width: 960px) {
+  .empty-box {
+    display: none;
+  }
+}
+
+header .menu a, .sign-in a {
+  display: block;
+  text-decoration: none;
+  color: var(--main-color);
+  text-align: center;
+  transition: all 0.25s;
+  margin: 0 20px;
+}
+
+header .menu, header .sign-in {
+  display: none;
+}
+
+header .menu, .sign-in a:hover {
+  color: var(--hover-color);
+}
+
+.burger-icon {
+  color: #FFFFFF;
+}
+
+@media (min-width: 960px) {
+  .burger-icon {
+    display: none;
+  }
+
+  header nav .menu {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 960px) {
+  .top-nav {
+    padding: 13px 30px;
+  }
+}
+.top-banner {
+  background-image: url("../img/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 680px;
+}
+
+.impact {
+  background-image: url("../img/impact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.impact h2 {
+  color: #FFFFFF;
+}
+
+.impact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.impact-content {
+  color: var(--main-color);
+  font-family: "TT Commons", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.impact-info .button {
+  margin: 0 auto;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 214px;
+  height: 50px;
+  background: #FF7A74;
+  border-radius: 4px;
+  margin: 20px 0;
+  color: white;
+  transition: all, 0.25s;
+}
+
+.awards {
+  padding: 30px 0;
+}
+
+.award-example {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 80px 0;
+  justify-content: space-around;
+}
+.award-example img {
+  width: 96px;
+  height: 81px;
+  margin: 30px;
+}
+
+.award-name {
+  font-family: "TT Commons", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #553F3F;
+  margin: 30px;
+}
+
+.award-description {
+  font-family: "TT Commons", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #978C8C;
+  margin: 30px;
+}
+
+@media (min-width: 550px) {
+  .award-example {
+    flex-direction: column;
+  }
+}
+@media (min-width: 960px) {
+  .award-example {
+    display: flex;
+  }
+}
+.frame {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: 550px) {
+  .frame {
+    flex-direction: column;
+    line-height: 80px;
+  }
+}
+@media (min-width: 960px) {
+  .frame {
+    flex-direction: inherit;
+    line-height: 80px;
+  }
+}
+.services {
+  padding: 20px 0;
+}
+
+.service-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.services h3 {
+  margin-bottom: 33px;
+}
+
+.service-item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 550px) {
+  .service-item {
+    max-width: 48%;
+  }
+}
+@media (min-width: 960px) {
+  .service-item {
+    max-width: 30%;
+  }
+}
+.mission {
+  padding: 80px 0;
+}
+
+.mission-example {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.missions-img {
+  height: 320px;
+  width: 500px;
+}
+
+.mission-img {
+  display: flex;
+  margin: 20px;
+}
+
+.mission-name {
+  font-family: "SangBleu Sunrise", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  align-items: center;
+  color: #553F3F;
+  margin-left: 20px;
+}
+
+.mission-description {
+  font-family: "TT Commons", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #553F3F;
+}
+
+.mission-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 58px;
+  width: 191px;
+  height: 49px;
+  background: #FF7A74;
+  border-radius: 4px;
+  color: white;
+  margin: 28px 0;
+}
+
+.mission-button:hover {
+  text-decoration-color: cornflowerblue;
+}
+
+@media (min-width: 550px) {
+  .mission-example {
+    flex-direction: column;
+  }
+}
+@media (min-width: 960px) {
+  .mission-example {
+    flex-direction: inherit;
+  }
+}
+/* global title */
+.general-subtitle {
+  color: #553F3F;
+  font-family: "SangBleu Sunrise", sans-serif;
+  font-size: 40px;
+  line-height: 62px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 92px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TT Commons", sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  text-align: center;
+  font-family: "SangBleu Sunrise", sans-serif;
+}
+
+h1 {
+  color: #FFFFFF;
+}
+
+h1, h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+@media (min-width: 550px) {
+  h1 {
+    font-size: 45px;
+    line-height: 65px;
+  }
+}
+@media (min-width: 550px) {
+  h2 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+}
+@media (min-width: 960px) {
+  h2 {
+    font-size: 64px;
+    line-height: 84px;
+  }
+}
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+@media (min-width: 550px) {
+  h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 960px) {
+  h3 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  font-family: "TT Commons", sans-serif;
+  margin: 0;
+  padding: 0;
+  --main-color: #FFFFFF;
+  --hover-color: #eb6d2f;
+  --background: #F9F4F0;
+}
+
+body {
+  position: relative;
+  font-family: "TT Commons", sans-serif;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+@media (min-width: 550px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    width: 1160px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
